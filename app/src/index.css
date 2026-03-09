@@ -1,0 +1,346 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 240 10% 3.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 240 10% 3.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 240 10% 3.9%;
+    --primary: 240 5.9% 10%;
+    --primary-foreground: 0 0% 98%;
+    --secondary: 240 4.8% 95.9%;
+    --secondary-foreground: 240 5.9% 10%;
+    --muted: 240 4.8% 95.9%;
+    --muted-foreground: 240 3.8% 46.1%;
+    --accent: 240 4.8% 95.9%;
+    --accent-foreground: 240 5.9% 10%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 5.9% 90%;
+    --input: 240 5.9% 90%;
+    --ring: 240 5.9% 10%;
+    --radius: 0.625rem;
+    
+    /* CoopMorteros Colors */
+    --coop-yellow: 48 100% 50%;
+    --coop-green: 145 63% 42%;
+    --coop-blue: 210 100% 35%;
+    --coop-red: 0 72% 51%;
+    --coop-purple: 280 60% 45%;
+    --coop-orange: 24 95% 53%;
+    --coop-cyan: 195 100% 45%;
+    --coop-dark: 220 20% 15%;
+    --coop-gray: 220 10% 45%;
+    --coop-light-gray: 220 14% 96%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+}
+
+@layer components {
+  /* Hexagon Styles */
+  .hexagon {
+    position: relative;
+    width: 120px;
+    height: 69.28px;
+    background-color: hsl(var(--coop-yellow));
+    margin: 34.64px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  .hexagon:before,
+  .hexagon:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+  }
+
+  .hexagon:before {
+    bottom: 100%;
+    border-bottom: 34.64px solid hsl(var(--coop-yellow));
+  }
+
+  .hexagon:after {
+    top: 100%;
+    border-top: 34.64px solid hsl(var(--coop-yellow));
+  }
+
+  .hexagon:hover {
+    transform: scale(1.05);
+  }
+
+  /* Hexagon Colors */
+  .hexagon-green {
+    background-color: hsl(var(--coop-green));
+  }
+  .hexagon-green:before {
+    border-bottom-color: hsl(var(--coop-green));
+  }
+  .hexagon-green:after {
+    border-top-color: hsl(var(--coop-green));
+  }
+
+  .hexagon-blue {
+    background-color: hsl(var(--coop-blue));
+  }
+  .hexagon-blue:before {
+    border-bottom-color: hsl(var(--coop-blue));
+  }
+  .hexagon-blue:after {
+    border-top-color: hsl(var(--coop-blue));
+  }
+
+  .hexagon-red {
+    background-color: hsl(var(--coop-red));
+  }
+  .hexagon-red:before {
+    border-bottom-color: hsl(var(--coop-red));
+  }
+  .hexagon-red:after {
+    border-top-color: hsl(var(--coop-red));
+  }
+
+  .hexagon-purple {
+    background-color: hsl(var(--coop-purple));
+  }
+  .hexagon-purple:before {
+    border-bottom-color: hsl(var(--coop-purple));
+  }
+  .hexagon-purple:after {
+    border-top-color: hsl(var(--coop-purple));
+  }
+
+  .hexagon-orange {
+    background-color: hsl(var(--coop-orange));
+  }
+  .hexagon-orange:before {
+    border-bottom-color: hsl(var(--coop-orange));
+  }
+  .hexagon-orange:after {
+    border-top-color: hsl(var(--coop-orange));
+  }
+
+  .hexagon-cyan {
+    background-color: hsl(var(--coop-cyan));
+  }
+  .hexagon-cyan:before {
+    border-bottom-color: hsl(var(--coop-cyan));
+  }
+  .hexagon-cyan:after {
+    border-top-color: hsl(var(--coop-cyan));
+  }
+
+  .hexagon-yellow {
+    background-color: hsl(var(--coop-yellow));
+  }
+  .hexagon-yellow:before {
+    border-bottom-color: hsl(var(--coop-yellow));
+  }
+  .hexagon-yellow:after {
+    border-top-color: hsl(var(--coop-yellow));
+  }
+
+  /* Small Hexagon */
+  .hexagon-sm {
+    width: 80px;
+    height: 46.19px;
+    margin: 23.09px 0;
+  }
+  .hexagon-sm:before,
+  .hexagon-sm:after {
+    border-left-width: 40px;
+    border-right-width: 40px;
+  }
+  .hexagon-sm:before {
+    border-bottom-width: 23.09px;
+  }
+  .hexagon-sm:after {
+    border-top-width: 23.09px;
+  }
+
+  /* Large Hexagon */
+  .hexagon-lg {
+    width: 160px;
+    height: 92.38px;
+    margin: 46.19px 0;
+  }
+  .hexagon-lg:before,
+  .hexagon-lg:after {
+    border-left-width: 80px;
+    border-right-width: 80px;
+  }
+  .hexagon-lg:before {
+    border-bottom-width: 46.19px;
+  }
+  .hexagon-lg:after {
+    border-top-width: 46.19px;
+  }
+
+  /* Hexagon Content */
+  .hexagon-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    padding: 0 10px;
+  }
+
+  /* Hexagon Grid Pattern */
+  .hexagon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 40px 0;
+  }
+
+  .hexagon-item {
+    margin: 0 5px;
+  }
+
+  /* ODS Card Styles */
+  .ods-card {
+    @apply relative overflow-hidden rounded-xl p-6 transition-all duration-300;
+    background: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .ods-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Timeline Styles */
+  .timeline-item {
+    @apply relative pl-8 pb-8 border-l-2 border-yellow-400;
+  }
+
+  .timeline-item:last-child {
+    @apply border-l-0 pb-0;
+  }
+
+  .timeline-dot {
+    @apply absolute -left-3 top-0 w-6 h-6 rounded-full bg-yellow-400 border-4 border-white shadow-md;
+  }
+
+  /* Section Styles */
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-4;
+    color: hsl(var(--coop-dark));
+  }
+
+  .section-subtitle {
+    @apply text-lg text-center mb-12 max-w-3xl mx-auto;
+    color: hsl(var(--coop-gray));
+  }
+
+  /* Button Styles */
+  .btn-primary {
+    @apply px-8 py-3 rounded-full font-semibold text-white transition-all duration-300;
+    background: linear-gradient(135deg, hsl(var(--coop-yellow)) 0%, hsl(var(--coop-orange)) 100%);
+  }
+
+  .btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 193, 7, 0.4);
+  }
+
+  /* Gradient Backgrounds */
+  .bg-gradient-coop {
+    background: linear-gradient(135deg, hsl(var(--coop-yellow)) 0%, hsl(var(--coop-orange)) 100%);
+  }
+
+  .bg-gradient-green {
+    background: linear-gradient(135deg, hsl(var(--coop-green)) 0%, #2e7d32 100%);
+  }
+
+  .bg-gradient-blue {
+    background: linear-gradient(135deg, hsl(var(--coop-blue)) 0%, #01579b 100%);
+  }
+
+  /* Card Hover Effect */
+  .card-hover {
+    @apply transition-all duration-300;
+  }
+
+  .card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  }
+
+  /* Initiative Card */
+  .initiative-card {
+    @apply bg-white rounded-2xl p-6 shadow-lg border-l-4;
+  }
+
+  .initiative-card.yellow {
+    border-left-color: hsl(var(--coop-yellow));
+  }
+
+  .initiative-card.green {
+    border-left-color: hsl(var(--coop-green));
+  }
+
+  .initiative-card.blue {
+    border-left-color: hsl(var(--coop-blue));
+  }
+
+  /* Stats Counter */
+  .stat-number {
+    @apply text-4xl md:text-5xl font-bold;
+    color: hsl(var(--coop-yellow));
+  }
+
+  /* Navigation Active State */
+  .nav-active {
+    @apply relative;
+  }
+
+  .nav-active::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-full h-1 rounded-full;
+    background: hsl(var(--coop-yellow));
+  }
+}
+
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--coop-yellow));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--coop-orange));
+}
