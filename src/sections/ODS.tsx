@@ -162,7 +162,7 @@ export const ODS: FC = () => {
       name: 'Fin de la pobreza',
       color: '#E5243B',
       bgColor: '#E5243B',
-      description: 'Trabajamos para erradicar la pobreza en nuestra comunidad mediante programas sociales.',
+      description: 'Contribuimos a reducir situaciones de vulnerabilidad a través de:\n• Tarifas sociales en servicios como agua potable.\n• Entrega de kits sociales de energía a usuarios con dificultades económicas.\n• Programa de acompañamiento a todos los merenderos de la ciudad.',
       icon: ODSIcons.ods1,
     },
     {
@@ -170,7 +170,7 @@ export const ODS: FC = () => {
       name: 'Salud y bienestar',
       color: '#4C9F38',
       bgColor: '#4C9F38',
-      description: 'Garantizamos el bienestar de nuestros socios y la comunidad con servicios de calidad.',
+      description: 'Trabajamos por el bienestar de la comunidad mediante:\n• Prestación de servicios esenciales de calidad: agua potable, energía, conectividad.\n• Apoyo a instituciones de salud y organizaciones sociales (ALPI, LALCEC, entre otras).',
       icon: ODSIcons.ods3,
     },
     {
@@ -178,7 +178,7 @@ export const ODS: FC = () => {
       name: 'Igualdad de género',
       color: '#FF3A21',
       bgColor: '#FF3A21',
-      description: 'Promovemos la igualdad de oportunidades para todos en nuestra cooperativa.',
+      description: 'Promovemos una cultura organizacional basada en la equidad:\n• Igualdad de oportunidades.\n• Políticas orientadas a la inclusión y el respeto.\n• Participación equitativa en equipos de trabajo y desarrollo profesional.',
       icon: ODSIcons.ods5,
     },
     {
@@ -186,7 +186,7 @@ export const ODS: FC = () => {
       name: 'Energía asequible y no contaminante',
       color: '#FCC30B',
       bgColor: '#FCC30B',
-      description: 'Desarrollamos energía limpia con nuestro parque solar de 55.000 kW/h.',
+      description: 'Somos protagonistas de la transición energética local:\n• Desarrollo del Parque Solar Comunitario, con generación de energía limpia.\n• Promoción de la generación distribuida, permitiendo a usuarios acceder a energías renovables.\n• Medición de la huella de carbono organizacional.',
       icon: ODSIcons.ods7,
     },
     {
@@ -194,7 +194,7 @@ export const ODS: FC = () => {
       name: 'Trabajo decente y crecimiento económico',
       color: '#A21942',
       bgColor: '#A21942',
-      description: 'Generamos empleo de calidad y desarrollo económico local en Morteros.',
+      description: 'Impulsamos el desarrollo económico regional:\n• Generación de empleo local de calidad.\n• Colaboración a consorcios camineros.\n• Programa de Eficiencia Energética para comercios.',
       icon: ODSIcons.ods8,
     },
     {
@@ -202,7 +202,7 @@ export const ODS: FC = () => {
       name: 'Reducción de las desigualdades',
       color: '#DD1367',
       bgColor: '#DD1367',
-      description: 'Reducimos brechas mediante tarifas sociales y programas de ayuda.',
+      description: 'Trabajamos para generar mayor equidad en el acceso a servicios:\n• Implementación de tarifas diferenciales y ayudas sociales.',
       icon: ODSIcons.ods10,
     },
     {
@@ -210,7 +210,7 @@ export const ODS: FC = () => {
       name: 'Ciudades y comunidades sostenibles',
       color: '#FD9D24',
       bgColor: '#FD9D24',
-      description: 'Construimos una comunidad más sostenible e inclusiva con nuestros servicios.',
+      description: 'Aportamos al desarrollo sostenible de Morteros y la región:\n• Inversión en proyectos sostenibles, como energías renovables.\n• Acompañamiento a instituciones locales que fortalecen el tejido social (Taller Protegido "Castillo Azul", Escuela Especial "La Rosa Azul", entre otras).',
       icon: ODSIcons.ods11,
     },
     {
@@ -218,7 +218,7 @@ export const ODS: FC = () => {
       name: 'Producción y consumo responsables',
       color: '#BF8B2E',
       bgColor: '#BF8B2E',
-      description: 'Promovemos prácticas de consumo responsable y eficiencia energética.',
+      description: 'Promovemos una gestión responsable de los recursos:\n• Programa de Eficiencia Energética para comercios.\n• Gestión ambiental y medición de la huella de carbono organizacional.\n• Promoción de prácticas sustentables dentro y fuera de la institución.',
       icon: ODSIcons.ods12,
     },
     {
@@ -226,7 +226,7 @@ export const ODS: FC = () => {
       name: 'Paz, justicia e instituciones sólidas',
       color: '#00689D',
       bgColor: '#00689D',
-      description: 'Fortalecemos nuestras instituciones con transparencia y gobierno cooperativo.',
+      description: 'Fortalecemos una gestión transparente y participativa:\n• Publicación de Reportes de Sustentabilidad bajo estándares GRI.\n• Gobierno cooperativo basado en la participación de los asociados.\n• Vínculo activo con la comunidad y rendición de cuentas.',
       icon: ODSIcons.ods16,
     },
   ];
@@ -291,9 +291,9 @@ export const ODS: FC = () => {
                       <span className="text-4xl font-bold opacity-50">ODS {ods.number}</span>
                     </div>
                     <h4 className="text-xl font-bold mb-4">{ods.name}</h4>
-                    <p className="text-white/90 text-base leading-relaxed">
+                    <div className="text-white/90 text-sm leading-relaxed whitespace-pre-line">
                       {ods.description}
-                    </p>
+                    </div>
                   </div>
                 </div>
               </div>
