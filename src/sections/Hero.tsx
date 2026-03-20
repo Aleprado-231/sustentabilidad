@@ -5,15 +5,19 @@ import { HexagonPattern } from '@/components/hexagon/HexagonPattern';
 export const Hero: FC = () => {
   return (
     <section id="hero" className="relative min-h-screen flex items-center overflow-hidden">
-      {/* Background Image */}
+      {/* Background Video */}
       <div className="absolute inset-0">
-        <img
-          src="/images/hero-sustentabilidad.jpg"
-          alt="Sustentabilidad CoopMorteros"
-          width={1920}
-          height={1080}
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
           className="w-full h-full object-cover"
-        />
+          poster="/images/hero-sustentabilidad.jpg"
+        >
+          <source src="/videos/hero-video.mov" type="video/quicktime" />
+          <source src="/videos/hero-video.mp4" type="video/mp4" />
+        </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
       </div>
 
