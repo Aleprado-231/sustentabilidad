@@ -304,6 +304,30 @@
     border-left-color: hsl(var(--coop-blue));
   }
 
+  .initiative-card.purple {
+    border-left-color: #a855f7;
+  }
+
+  .initiative-card.orange {
+    border-left-color: #f97316;
+  }
+
+  .initiative-card.cyan {
+    border-left-color: #06b6d4;
+  }
+
+  .initiative-card.indigo {
+    border-left-color: #6366f1;
+  }
+
+  .initiative-card.red {
+    border-left-color: #ef4444;
+  }
+
+  .initiative-card.pink {
+    border-left-color: #ec4899;
+  }
+
   /* Stats Counter */
   .stat-number {
     @apply text-4xl md:text-5xl font-bold;
