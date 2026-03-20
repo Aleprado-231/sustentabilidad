@@ -15,7 +15,6 @@ export const Hero: FC = () => {
           className="w-full h-full object-cover"
           poster="/images/hero-sustentabilidad.jpg"
         >
-          <source src="/videos/hero-video.mov" type="video/quicktime" />
           <source src="/videos/hero-video.mp4" type="video/mp4" />
         </video>
         <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/60 to-transparent"></div>
