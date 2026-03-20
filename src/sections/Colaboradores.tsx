@@ -1,4 +1,5 @@
 import type { FC } from 'react';
+import { useRef } from 'react';
 import { Handshake } from 'lucide-react';
 import {
   Carousel,
@@ -10,6 +11,7 @@ import {
 import Autoplay from 'embla-carousel-autoplay';
 
 export const Colaboradores: FC = () => {
+  const plugin = useRef(Autoplay({ delay: 2500, stopOnInteraction: false }));
   // Lista de logos de instituciones colaboradoras
   const logos = [
     { id: 1, name: 'Institución 1', src: '/images/logos/1.png' },
@@ -56,22 +58,16 @@ export const Colaboradores: FC = () => {
               align: 'start',
               loop: true,
             }}
-            plugins={[
-              Autoplay({
-                delay: 3000,
-                stopOnInteraction: false,
-                stopOnMouseEnter: true,
-              }),
-            ]}
+            plugins={[plugin.current]}
             className="w-full"
           >
             <CarouselContent className="-ml-4">
               {logos.map((logo) => (
                 <CarouselItem
                   key={logo.id}
-                  className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4"
+                  className="pl-6 basis-1/2 md:basis-1/3"
                 >
-                  <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 h-44 flex items-center justify-center group">
+                  <div className="bg-white rounded-xl p-10 shadow-sm hover:shadow-lg transition-all duration-300 h-52 flex items-center justify-center group">
                     <img
                       src={logo.src}
                       alt={logo.name}
@@ -81,8 +77,8 @@ export const Colaboradores: FC = () => {
                 </CarouselItem>
               ))}
             </CarouselContent>
-            <CarouselPrevious className="hidden md:flex -left-4 bg-white border-gray-200 hover:bg-green-50 hover:border-green-300" />
-            <CarouselNext className="hidden md:flex -right-4 bg-white border-gray-200 hover:bg-green-50 hover:border-green-300" />
+            <CarouselPrevious className="hidden md:flex -left-6 bg-white border-gray-300 hover:bg-green-50 hover:border-green-400 shadow-md" />
+            <CarouselNext className="hidden md:flex -right-6 bg-white border-gray-300 hover:bg-green-50 hover:border-green-400 shadow-md" />
           </Carousel>
         </div>
       </div>
