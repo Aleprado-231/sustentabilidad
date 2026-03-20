@@ -69,9 +69,9 @@ export const Colaboradores: FC = () => {
               {logos.map((logo) => (
                 <CarouselItem
                   key={logo.id}
-                  className="pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6"
+                  className="pl-6 basis-1/2 md:basis-1/3 lg:basis-1/4"
                 >
-                  <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-md transition-shadow h-32 flex items-center justify-center group">
+                  <div className="bg-white rounded-xl p-8 shadow-sm hover:shadow-lg transition-all duration-300 h-44 flex items-center justify-center group">
                     <img
                       src={logo.src}
                       alt={logo.name}
