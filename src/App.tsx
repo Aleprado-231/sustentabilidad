@@ -7,6 +7,7 @@ import { Iniciativas } from '@/sections/Iniciativas';
 import { MedioAmbiente } from '@/sections/MedioAmbiente';
 import { Programas } from '@/sections/Programas';
 import { Noticias } from '@/sections/Noticias';
+import { Colaboradores } from '@/sections/Colaboradores';
 import { Footer } from '@/sections/Footer';
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
         <Iniciativas />
         <MedioAmbiente />
         <Programas />
+        <Colaboradores />
         <Noticias />
       </main>
       <Footer />
