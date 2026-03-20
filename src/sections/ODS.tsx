@@ -186,7 +186,7 @@ export const ODS: FC = () => {
       name: 'Energía asequible y no contaminante',
       color: '#FCC30B',
       bgColor: '#FCC30B',
-      description: 'Somos protagonistas de la transición energética local:\n• Desarrollo del Parque Solar Comunitario, con generación de energía limpia.\n• Promoción de la generación distribuida, permitiendo a usuarios acceder a energías renovables.\n• Medición de la huella de carbono organizacional.',
+      description: 'Somos protagonistas de la transición energética local:\n• Desarrollo del Parque Solar Comunitario, con generación de energía limpia.\n• Promoción de la generación distribuida, permitiendo acceder a energías renovables.\n• Medición de la huella de carbono organizacional.',
       icon: ODSIcons.ods7,
     },
     {
