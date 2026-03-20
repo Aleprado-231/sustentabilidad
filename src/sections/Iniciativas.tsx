@@ -9,8 +9,8 @@ export const Iniciativas: FC = () => {
       title: 'Programa de Eficiencia Energética',
       subtitle: 'Para comercios locales',
       description: 'Programa de eficiencia energética para los comercios en conjunto con el Centro Comercial.',
-      stat: 'OJO',
-      statLabel: 'Programa activo',
+      stat: '15',
+      statLabel: 'Comercios relevados',
       color: 'yellow',
     },
     {
