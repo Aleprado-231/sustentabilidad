@@ -24,7 +24,7 @@ export const Navigation: FC<NavigationProps> = ({ className }) => {
     { label: 'ODS', href: '#ods' },
     { label: 'Logros', href: '#logros' },
     { label: 'Iniciativas', href: '#iniciativas' },
-    { label: 'Medio Ambiente', href: '#medioambiente' },
+    { label: 'Ambiente', href: '#medioambiente' },
     { label: 'Programas', href: '#programas' },
   ];
 

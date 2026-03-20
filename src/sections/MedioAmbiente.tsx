@@ -37,10 +37,10 @@ export const MedioAmbiente: FC = () => {
         <div className="text-center mb-16">
           <div className="inline-flex items-center gap-2 bg-green-100 rounded-full px-4 py-2 mb-4">
             <Leaf className="text-green-600" size={18} />
-            <span className="text-green-800 text-sm font-semibold">Medio Ambiente</span>
+            <span className="text-green-800 text-sm font-semibold">Ambiente</span>
           </div>
           <h2 className="section-title">
-            Compromiso con el <span className="text-green-600">Medio Ambiente</span>
+            Compromiso con el <span className="text-green-600">Ambiente</span>
           </h2>
           <p className="section-subtitle">
             En 2022 formalizamos un compromiso con el Medioambiente definiendo esta responsabilidad como un nuevo objetivo estratégico.
