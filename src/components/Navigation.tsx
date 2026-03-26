@@ -26,6 +26,7 @@ export const Navigation: FC<NavigationProps> = ({ className }) => {
     { label: 'Iniciativas', href: '#iniciativas' },
     { label: 'Ambiente', href: '#medioambiente' },
     { label: 'Programas', href: '#programas' },
+    { label: 'Noticias', href: '#noticias' },
   ];
 
   return (
@@ -75,17 +76,7 @@ export const Navigation: FC<NavigationProps> = ({ className }) => {
             ))}
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            <a
-              href="https://app.coopmorteros.coop/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-gradient-coop text-white px-6 py-2 rounded-full font-semibold text-sm hover:shadow-lg transition-all"
-            >
-              Oficina Virtual
-            </a>
-          </div>
+
 
           {/* Mobile Menu Button */}
           <button
@@ -113,14 +104,7 @@ export const Navigation: FC<NavigationProps> = ({ className }) => {
                 {item.label}
               </a>
             ))}
-            <a
-              href="https://app.coopmorteros.coop/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="block mt-3 bg-gradient-coop text-white px-4 py-3 rounded-lg font-semibold text-center"
-            >
-              Oficina Virtual
-            </a>
+
           </div>
         )}
       </div>
