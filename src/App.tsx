@@ -20,9 +20,9 @@ function App() {
         <Iniciativas />
         <MedioAmbiente />
         <Programas />
+        <Colaboradores />
         <ODS />
         <Logros />
-        <Colaboradores />
         <Noticias />
       </main>
       <Footer />
