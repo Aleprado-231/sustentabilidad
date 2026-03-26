@@ -232,7 +232,7 @@ export const ODS: FC = () => {
   ];
 
   return (
-    <section id="ods" className="relative py-24 bg-gray-50 overflow-hidden">
+    <section id="ods" className="relative py-24 bg-white overflow-hidden">
       <HexagonPattern color="#3B82F6" opacity={0.05} count={15} />
       
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">

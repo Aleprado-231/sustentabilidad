@@ -1,5 +1,6 @@
 import type { FC } from 'react';
 import { Heart } from 'lucide-react';
+import { HexagonPattern } from '@/components/hexagon/HexagonPattern';
 
 export const Colaboradores: FC = () => {
   // Lista de logos de instituciones que apoyamos
@@ -25,7 +26,8 @@ export const Colaboradores: FC = () => {
   ];
 
   return (
-    <section id="colaboradores" className="py-20 bg-gray-50">
+    <section id="colaboradores" className="relative py-24 bg-white overflow-hidden">
+      <HexagonPattern color="#10B981" opacity={0.05} count={12} />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
