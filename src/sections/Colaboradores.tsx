@@ -1,18 +1,8 @@
 import type { FC } from 'react';
-import { useRef } from 'react';
-import { Handshake } from 'lucide-react';
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from '@/components/ui/carousel';
-import Autoplay from 'embla-carousel-autoplay';
+import { Heart } from 'lucide-react';
 
 export const Colaboradores: FC = () => {
-  const plugin = useRef(Autoplay({ delay: 2500, stopOnInteraction: false }));
-  // Lista de logos de instituciones colaboradoras
+  // Lista de logos de instituciones que apoyamos
   const logos = [
     { id: 1, name: 'Institución 1', src: '/images/logos/1.png' },
     { id: 2, name: 'Institución 2', src: '/images/logos/2.png' },
@@ -39,47 +29,33 @@ export const Colaboradores: FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center gap-2 bg-blue-100 rounded-full px-4 py-2 mb-4">
-            <Handshake className="text-blue-600" size={18} />
-            <span className="text-blue-800 text-sm font-semibold">Alianzas Estratégicas</span>
+          <div className="inline-flex items-center gap-2 bg-green-100 rounded-full px-4 py-2 mb-4">
+            <Heart className="text-green-600" size={18} />
+            <span className="text-green-800 text-sm font-semibold">Compromiso Social</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Instituciones con las que <span className="text-green-600">Colaboramos</span>
+            Instituciones que <span className="text-green-600">apoyamos</span>
           </h2>
-          <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            Trabajamos junto a organizaciones comprometidas con el desarrollo sustentable y el bienestar de nuestra comunidad.
+          <p className="text-gray-600 text-lg max-w-3xl mx-auto">
+            A través de donaciones, obras y programas de ayuda, contribuimos al fortalecimiento 
+            de organizaciones comprometidas con el bienestar de nuestra comunidad.
           </p>
         </div>
 
-        {/* Carousel */}
-        <div className="relative px-4 md:px-12">
-          <Carousel
-            opts={{
-              align: 'start',
-              loop: true,
-            }}
-            plugins={[plugin.current]}
-            className="w-full"
-          >
-            <CarouselContent className="-ml-4">
-              {logos.map((logo) => (
-                <CarouselItem
-                  key={logo.id}
-                  className="pl-6 basis-1/2 md:basis-1/3"
-                >
-                  <div className="bg-white rounded-xl p-10 shadow-sm hover:shadow-lg transition-all duration-300 h-52 flex items-center justify-center group">
-                    <img
-                      src={logo.src}
-                      alt={logo.name}
-                      className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
-                    />
-                  </div>
-                </CarouselItem>
-              ))}
-            </CarouselContent>
-            <CarouselPrevious className="hidden md:flex -left-6 bg-white border-gray-300 hover:bg-green-50 hover:border-green-400 shadow-md" />
-            <CarouselNext className="hidden md:flex -right-6 bg-white border-gray-300 hover:bg-green-50 hover:border-green-400 shadow-md" />
-          </Carousel>
+        {/* Logos Grid */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6">
+          {logos.map((logo) => (
+            <div
+              key={logo.id}
+              className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 h-32 flex items-center justify-center group"
+            >
+              <img
+                src={logo.src}
+                alt={logo.name}
+                className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+              />
+            </div>
+          ))}
         </div>
       </div>
     </section>
