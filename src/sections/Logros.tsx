@@ -35,7 +35,7 @@ export const Logros: FC = () => {
       highlight: true,
     },
     {
-      year: '2026',
+      year: '2026-2027',
       title: 'Certificación ISO 14001',
       description: 'Estamos iniciando un viaje hacia la certificación de Normas ISO 14001.',
       icon: <CheckCircle className="text-white" size={20} />,

@@ -21,11 +21,11 @@ export const Navigation: FC<NavigationProps> = ({ className }) => {
   const navItems = [
     { label: 'Inicio', href: '#hero' },
     { label: 'Nuestro Compromiso', href: '#compromiso' },
-    { label: 'ODS', href: '#ods' },
-    { label: 'Logros', href: '#logros' },
     { label: 'Iniciativas', href: '#iniciativas' },
     { label: 'Ambiente', href: '#medioambiente' },
     { label: 'Programas', href: '#programas' },
+    { label: 'ODS', href: '#ods' },
+    { label: 'Logros', href: '#logros' },
     { label: 'Noticias', href: '#noticias' },
   ];
 

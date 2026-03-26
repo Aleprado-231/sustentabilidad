@@ -17,11 +17,11 @@ function App() {
       <main>
         <Hero />
         <Compromiso />
-        <ODS />
-        <Logros />
         <Iniciativas />
         <MedioAmbiente />
         <Programas />
+        <ODS />
+        <Logros />
         <Colaboradores />
         <Noticias />
       </main>

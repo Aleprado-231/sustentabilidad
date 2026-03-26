@@ -39,7 +39,7 @@ export const Footer: FC = () => {
             </div>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Cooperativa de Servicios Públicos de Morteros LTDA. 
-              Generando bienestar en la sociedad desde 1960.
+              Generando bienestar en la sociedad desde 1959.
             </p>
             <div className="flex gap-3">
               <a
