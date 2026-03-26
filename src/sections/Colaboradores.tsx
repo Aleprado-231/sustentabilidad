@@ -28,7 +28,7 @@ export const Colaboradores: FC = () => {
   return (
     <section id="colaboradores" className="relative py-24 bg-white overflow-hidden">
       <HexagonPattern color="#10B981" opacity={0.05} count={12} />
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-12">
           <div className="inline-flex items-center gap-2 bg-green-100 rounded-full px-4 py-2 mb-4">
