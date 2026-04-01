@@ -31,11 +31,11 @@ const CarouselLogos: FC<CarouselLogosProps> = ({ logos, delay = 3000 }) => {
             key={logo.id}
             className="pl-4 basis-1/2 sm:basis-1/3 md:basis-1/4 lg:basis-1/5 xl:basis-1/6"
           >
-            <div className="bg-white rounded-xl p-5 shadow-sm hover:shadow-md transition-all duration-300 h-28 flex items-center justify-center group">
+            <div className="bg-white rounded-xl p-6 shadow-sm hover:shadow-lg transition-all duration-300 h-36 flex items-center justify-center">
               <img
                 src={logo.src}
                 alt={logo.name}
-                className="max-w-full max-h-full object-contain filter grayscale group-hover:grayscale-0 transition-all duration-300"
+                className="max-w-full max-h-full object-contain"
               />
             </div>
           </CarouselItem>
