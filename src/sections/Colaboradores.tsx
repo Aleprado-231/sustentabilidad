@@ -184,7 +184,7 @@ export const Colaboradores: FC = () => {
             <span className="text-green-800 text-sm font-semibold">Compromiso Social</span>
           </div>
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            Instituciones que <span className="text-green-600">apoyamos</span>
+            Apoyamos a <span className="text-green-600">+70 Instituciones</span>
           </h2>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
             A través de donaciones, obras y programas de ayuda, contribuimos al fortalecimiento 
